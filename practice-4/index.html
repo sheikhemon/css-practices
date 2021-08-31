@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elements</title>
+    <style type="text/css">
+   @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;300;500;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Grenze Gotisch', cursive;
+        }
+        :root{
+            --main-width: 100vw; 
+        }
+        .main_div{
+            width: 100vw;
+            height: 100vh;
+            padding-top: 100px;
+            text-align: center;
+        }
+        h1{
+            color: #2980b9;
+            font-size: 5rem;
+        }
+        h1:after{
+            content: "\f005";
+            font-family: "Font Awesome 5 Free";
+            height: 25px;
+            width: calc(var(--main-width) - 87vw);
+            color: #1abc9c;
+            font-size: 3rem;
+            display: block;
+            margin: 0 auto;
+            border-bottom: 5px solid #2980B9;
+        }
+        @media(max-width: 998px){
+           h1{
+               font-size: 4rem;
+           }
+           h1:after{
+                width: calc(var(--main-width) - 70vw);
+            }
+        }
+    
+        @media(max-width: 768px){
+           h1{
+               font-size: 2.5rem;
+           }
+           h1:after{
+                font-size: 2rem;
+                height: 18px;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <h1>Emon Sheikh</h1>
+    </div>
+</body>
+</html>

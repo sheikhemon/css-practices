@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create PI Chart</title>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;800&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Dosis', sans-serif;
+        }
+        .main_div{
+            width: 100vw;
+            height: 100vh;
+            background-color: #ecf0f1;
+            display: grid;
+            place-items: center;
+        }
+        .center_div{
+            width: calc(100vw - 40vw);
+            height: calc(100vh - 30vh);
+            position: relative;
+            border: 1px solid #222;
+            box-shadow: 0 0 20px #2ff;
+        }
+        .center_div h1{
+            padding: 20px 0 20px 20px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: 0.1rem;
+        }
+        .center_div p {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            text-align: right;
+            letter-spacing: 0.2rem;
+            font-weight: 600;
+        }
+        .center_div span::after{
+            content: "";
+            display: inline-block;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            background: currentColor;
+            margin: 0 .5rem;
+        }
+        .center_div h3{
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            font-weight: 600;
+            color: gray;
+            letter-spacing: 0.2rem;
+            font-style: italic;
+        }
+        .pie_chart{
+            margin-top: 50px;
+            background: radial-gradient(circle closest-side, transparent 100%,
+            #ECF0F1 0),
+            conic-gradient(red, orange, yellow, green, blue, lime,
+            magenta, aqua);
+            min-height: 450px;
+            min-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <div class="center_div">
+            <h1>Bangladesh Top 5 states with highest corona cases .</h1>
+            <div class="pie_chart"></div>
+            <p>
+                Narayangang 2000 <span style="color: #ee5253"></span><br>
+                Dhaka 5000 <span style="color: #f28e2c"></span><br>
+                LalmoniHat 3000 <span style="color: #d2d2d2"></span><br>
+                Kishorgang 1800 <span style="color: #2ff"></span><br>
+                Sirajgang 1400 <span style="color: #9c9c9c"></span><br>
+            </p>
+            <h3>Bangladesh Corona Viras Cases Still Now.</h3>
+        </div>
+    </div>
+</body>
+</html>

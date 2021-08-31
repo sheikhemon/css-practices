@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisrt letter & line</title>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;300;500;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Grenze Gotisch', cursive;
+        }
+        .main_div{
+            width: 100vw;
+            height: 100vh;
+            background-color: #571845;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .child_div{
+            max-width: 1170px;
+        }
+        .child_div p{
+            font-size: 1.5rem;
+            font-weight: lighter;   
+            letter-spacing: 2px;
+            color: #fff;
+        }
+        p.first_cl::first-letter{
+            color: yellow;
+            font-size: 8rem;
+            font-weight: bold;
+            float: left;
+            display: block;
+            margin: 20px 15px 0 0; 
+        }
+        p.first_cl::first-line{
+            color: yellow;
+            font-weight: bold;
+            font-style: italic;
+        }
+        p::selection{
+            background: black;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <div class="child_div">
+            <p class="first_cl">
+                Emon Sheikh dolor sit amet consectetur adipisicing elit. Laborum porro cumque id iure totam consectetur odit. Quos nam necessitatibus, possimus, non amet ut iusto ullam tempora cum expedita architecto earum a sed quibusdam vero laborum incidunt vitae doloremque at illum sunt eius nulla? Repudiandae aspernatur saepe alias maxime quaerat dolores!
+                Emon Sheikh dolor sit amet consectetur adipisicing elit. Laborum porro cumque id iure totam consectetur odit. Quos nam necessitatibus, possimus, non amet ut iusto ullam tempora cum expedita architecto earum a sed quibusdam vero laborum incidunt vitae doloremque at illum sunt eius nulla? Repudiandae aspernatur saepe alias maxime quaerat dolores!
+            </p>
+            <br>
+            <p>
+                Emon Sheikh dolor sit amet consectetur adipisicing elit. Possimus optio vero aliquid laboriosam sint aperiam laborum atque cumque delectus accusantium in hic autem assumenda iure, quas animi impedit sapiente quisquam perferendis aspernatur. Perspiciatis repellat necessitatibus ea fugit est reiciendis, dolorum itaque, magnam facere dolore natus perferendis facilis aut error tempora! <br>
+                Emon Sheikh dolor sit amet consectetur adipisicing elit. Possimus optio vero aliquid laboriosam sint aperiam laborum atque cumque delectus accusantium in hic autem assumenda iure, quas animi impedit sapiente quisquam perferendis aspernatur. Perspiciatis repellat necessitatibus ea fugit est reiciendis, dolorum itaque, magnam facere dolore natus perferendis facilis aut error tempora!
+            </p>
+            <br>
+            <p>
+                Emon Sheikh dolor, sit amet consectetur adipisicing elit. Aspernatur voluptatibus ad expedita laudantium eveniet nemo aperiam atque magnam, ullam libero debitis autem animi explicabo cupiditate iusto, molestias culpa eius facilis maiores qui beatae! Omnis voluptatum iste, inventore iure corrupti at? Sit tempore repellat illum, laborum expedita explicabo. Id, magni corporis. <br>
+                Emon Sheikh dolor, sit amet consectetur adipisicing elit. Aspernatur voluptatibus ad expedita laudantium eveniet nemo aperiam atque magnam, ullam libero debitis autem animi explicabo cupiditate iusto, molestias culpa eius facilis maiores qui beatae! Omnis voluptatum iste, inventore iure corrupti at? Sit tempore repellat illum, laborum expedita explicabo. Id, magni corporis.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

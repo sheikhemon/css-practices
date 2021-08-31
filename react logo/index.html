@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> React logo</title>
+    <style>
+        *, *::before, *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .center_div{
+            width: 100vw;
+            height: 100vh;
+            background-color: #222222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .react_logo{
+            width: 30rem;
+            height: 10rem;
+            border: .6rem solid #61DAFB;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: rot 5s linear infinite;
+        }
+        @keyframes rot{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .react_logo::before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            border: .6rem solid #61DAFB;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(60deg);
+        }
+        .react_logo::after{
+            content: '';
+            width: 100%;
+            height: 100%;
+            border: .6rem solid #61DAFB;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(-60deg);
+        }
+        .circile{
+            width: 4rem;
+            height: 4rem;
+            background-color: #61DAFB;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="center_div">
+        <div class="react_logo">
+            <div class="circile"></div>
+        </div>
+    </div>
+</body>
+</html>

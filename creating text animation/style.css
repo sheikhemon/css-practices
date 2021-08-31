@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+html{
+    font-size: 62.5%;
+}
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    background: #2c3e50;
+    display: grid;
+    place-items: center;
+}
+.center_div{
+    width: 50%;
+    height: auto;
+    /* background-color: aquamarine; */
+}
+.center_div ul{
+    display: flex;
+    justify-content: center;
+}
+.center_div ul li{
+    list-style: none;
+    font-size: 7rem;
+    padding-left: 3rem;
+    text-transform: uppercase;
+    color: #ecf0f1;
+    animation: light 1.3s linear infinite;
+    transition: all .5s ease-in-out;
+}
+@keyframes light{
+    0%{
+        color: #e74c3c;
+        text-shadow: none;
+    }
+    90%{
+        color: #e74c3c;
+        text-shadow: none;
+    }
+    100%{
+        color: #fff200;
+        text-shadow: 0 0 1rem #d35400, 0 0 7rem #d35400;
+    }
+}
+.center_div ul li:first-child{
+    padding-left: 0;
+}
+.center_div ul li:nth-child(1){
+    animation-delay: .1s;
+}
+.center_div ul li:nth-child(2){
+    animation-delay: .2s;
+}
+.center_div ul li:nth-child(3){
+    animation-delay: .3s;
+}
+.center_div ul li:nth-child(4){
+    animation-delay: .4s;
+}
+.center_div ul li:nth-child(5){
+    animation-delay: .5s;
+}
+.center_div ul li:nth-child(6){
+    animation-delay: .6s;
+}
+.center_div ul li:nth-child(7){
+    animation-delay: .7s;
+}

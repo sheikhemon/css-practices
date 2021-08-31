@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>camera icon</title>
+    <style>
+        *, *::before, *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        :root{
+            --camera-body: #d2dae2;
+            --camera-shadow: #222a2f;
+            --camera-btn: #0be881;
+            --camera-lens: #218c74;
+        }
+        .center_div{
+            width: 100vw;
+            height: 100vh;
+            background-color: hsl(215, 15%, 94%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .camera_div{
+            width: 20rem;
+            height: 15rem;
+            background-color: var(--camera-body);
+            border-radius: 1rem;
+            box-shadow: 0 1rem 1.2rem -1rem var(--camera-shadow);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .camera_btn{
+            width: 3rem;
+            height: .8rem;
+            background-color: var(--camera-btn);
+            position: absolute;
+            top: -.8rem;
+            left: 2rem;
+            border-top-left-radius: .8rem;
+            border-top-right-radius: .8rem;
+        }
+        .camera_flash{
+            width: 2rem;
+            height: 2rem;
+            background-color: #e1b12c;
+            border-radius: 50%;
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            box-shadow: 0 1rem 1.2rem -1rem var(--camera-shadow);
+        }
+        .camera_circle{
+            width: 11rem;
+            height: 11rem;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 1rem 1.2rem -1rem var(--camera-shadow);
+            position: relative;
+            display: grid;
+            place-items: center;
+        }
+        .camera_circle::before{
+            content: '';
+            width: 9rem;
+            height: 9rem;
+            background-color: var(--camera-lens);
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 0 1rem 1.2rem -1rem var(--camera-shadow);
+        }
+        .camera_circle::after{
+            content: '';
+            border-top: 3rem solid #e1b12c;
+            border-bottom: 3rem solid #7f8fa6;
+            border-left: 3rem solid #e84118;
+            border-right: 3rem solid #353b48;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 0 1rem 1.2rem -1rem var(--camera-shadow);
+        }
+    </style>
+</head>
+<body>
+    <div class="center_div">
+        <div class="camera_div">
+            <div class="camera_btn"></div>
+            <div class="camera_flash"></div>
+            <div class="camera_circle"></div>
+        </div>
+    </div>
+</body>
+</html>

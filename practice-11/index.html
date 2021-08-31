@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background text</title>
+</head>
+<style type="text/css"> 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Nunito', sans-serif;
+    }
+    .main_header{
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        display: grid;
+        place-items: center;
+    }
+    h1{
+        color: transparent;
+        font-size: 100px;
+        font-weight: 800;
+        background-image: url(img/img.jpg);
+        background-size: 100% 100%;
+        /* background-position: center;
+        background-repeat: no-repeat; */
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+    }
+    h1::selection{
+        background-color: violet;
+        color: yellow;
+    }   
+</style>
+<body>
+    <div class="main_header">
+        <h1>Emon Sheikh</h1>
+    </div>
+</body>
+</html>
